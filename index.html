@@ -1,0 +1,1174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+
+    <!-- nav starts -->
+
+    <nav class="nav-body">
+        <div class="nav-left">
+            <ul>
+                <li>
+                    <img style="height: 45px;height: 45px;" src="./pics/ZEE5_logo.svg" alt="">
+                </li>
+                <li>HOME
+                    <div id="home"></div>
+                </li>
+                <li class="tv">TV Shows
+                    <div id="tv"></div>
+                </li>
+                <li class="tv">Movies
+                    <div id="movies"></div>
+                </li>
+                <li class="menu"><svg style="fill: aliceblue;height: 18px;width: 18px;" aria-hidden="true"
+                        focusable="false" data-prefix="fas" data-icon="grid" role="img"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-grid fa-lg">
+                        <path fill="currentColor"
+                            d="M0 72C0 49.9 17.9 32 40 32H88c22.1 0 40 17.9 40 40v48c0 22.1-17.9 40-40 40H40c-22.1 0-40-17.9-40-40V72zM0 232c0-22.1 17.9-40 40-40H88c22.1 0 40 17.9 40 40v48c0 22.1-17.9 40-40 40H40c-22.1 0-40-17.9-40-40V232zM128 392v48c0 22.1-17.9 40-40 40H40c-22.1 0-40-17.9-40-40V392c0-22.1 17.9-40 40-40H88c22.1 0 40 17.9 40 40zM160 72c0-22.1 17.9-40 40-40h48c22.1 0 40 17.9 40 40v48c0 22.1-17.9 40-40 40H200c-22.1 0-40-17.9-40-40V72zM288 232v48c0 22.1-17.9 40-40 40H200c-22.1 0-40-17.9-40-40V232c0-22.1 17.9-40 40-40h48c22.1 0 40 17.9 40 40zM160 392c0-22.1 17.9-40 40-40h48c22.1 0 40 17.9 40 40v48c0 22.1-17.9 40-40 40H200c-22.1 0-40-17.9-40-40V392zM448 72v48c0 22.1-17.9 40-40 40H360c-22.1 0-40-17.9-40-40V72c0-22.1 17.9-40 40-40h48c22.1 0 40 17.9 40 40zM320 232c0-22.1 17.9-40 40-40h48c22.1 0 40 17.9 40 40v48c0 22.1-17.9 40-40 40H360c-22.1 0-40-17.9-40-40V232zM448 392v48c0 22.1-17.9 40-40 40H360c-22.1 0-40-17.9-40-40V392c0-22.1 17.9-40 40-40h48c22.1 0 40 17.9 40 40z"
+                            class=""></path>
+                    </svg>
+                    <div id="menu">
+                        <ul class="men">
+                            <li>Premium</li>
+                            <li>Web Series</li>
+                            <li>News</li>
+                            <li>Eduauraa</li>
+                            <li>Live TV</li>
+                            <li>Music</li>
+                            <li>Sports</li>
+                            <li>Rent</li>
+                            <li>Kids</li>
+                            <li>Songs</li>
+                            <li>Videos</li>
+                            <li>Channels</li>
+                            <li>Serials</li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <ul>
+                <li class="inp">
+                    <div id="inp"><i class="fa-solid fa-magnifying-glass"></i> <input type="text"
+                            placeholder="Search for Movies, Shows, Channels etc."></div>
+
+                </li>
+                <li class="lang">
+                    <div id="lang"> <img src="./pics/352221_auto_wb_icon (1).svg" alt="">
+                        <p>Change language</p>
+                    </div>
+                </li>
+                <li class="login">
+                    <p id="log">LOGIN</p>
+                </li>
+                <li class="premium">
+                    <div id="premium"><i style="margin-top: 3px;" class="fa-solid fa-crown"></i>
+                        <p id="pre">Buy Plan</p>
+                    </div>
+                </li>
+                <li class="bars"><i class="fa-solid fa-bars"></i>
+                    <div id="bars">
+                        <ul>
+                            <li>MENU</li>
+                            <li>SETTINGS</li>
+                            <li>HELP</li>
+                            <li>FEED BACK</li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- nav ends -->
+
+    <!-- 1st corousel starts -->
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="height: 500px;">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+
+
+
+                <div id="main">
+                    <img src="./pics/mrs.jpg" alt="">
+                </div>
+                <div class="main">
+                    <p style="color: aliceblue;">Mrs Undercover</p>
+                    <div class="main1" style="color: aliceblue;">
+                        <p><i class="fa-solid fa-play"></i> </p>
+                        <p id="p1">watch</p>
+                    </div>
+                    <div class="main2" style="color: aliceblue;">
+                        <p><i class="fa-solid fa-crown"></i> </p>
+                        <p id="p2">Buy Plan</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="carousel-item">
+
+                <div id="main">
+                    <img src="./pics/prema.jpg" alt="">
+                </div>
+                <div class="main">
+                    <p style="color: aliceblue;">Prema Entha Madhuram</p>
+                    <div class="main1" style="color: aliceblue;">
+                        <p><i class="fa-solid fa-play"></i> </p>
+                        <p id="p1">watch</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div id="main">
+                    <img src="./pics/taj.jpg" alt="">
+                </div>
+                <div class="main">
+                    <p style="color: aliceblue;">Taj</p>
+                    <div class="main1" style="color: aliceblue;">
+                        <p><i class="fa-solid fa-play"></i> </p>
+                        <p id="p1">watch</p>
+                    </div>
+                    <div class="main2" style="color: aliceblue;">
+                        <p><i class="fa-solid fa-crown"></i> </p>
+                        <p id="p2">Buy Plan</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div id="main">
+                    <img src="./pics/sirf" alt="">
+                </div>
+                <div class="main">
+                    <p style="color: aliceblue;">Sirf Ek Bandaa Kaafi Hai</p>
+                    <div class="main1" style="color: aliceblue;">
+                        <p><i class="fa-solid fa-play"></i> </p>
+                        <p id="p1">watch</p>
+                    </div>
+                    <div class="main2" style="color: aliceblue;">
+                        <p><i class="fa-solid fa-crown"></i> </p>
+                        <p id="p2">Buy Plan</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div id="main">
+                    <img src="./pics/vishwak" alt="">
+                </div>
+                <div class="main">
+                    <p style="color: aliceblue;">Vishwak</p>
+                    <div class="main1" style="color: aliceblue;">
+                        <p><i class="fa-solid fa-play"></i> </p>
+                        <p id="p1">watch</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div id="main">
+                    <img src="./pics/heba.jpg" alt="">
+                </div>
+                <div class="main">
+                    <p style="color: aliceblue;">Vyavastha</p>
+                    <div class="main1" style="color: aliceblue;">
+                        <p><i class="fa-solid fa-play"></i> </p>
+                        <p id="p1">watch</p>
+                    </div>
+                    <div class="main2" style="color: aliceblue;">
+                        <p><i class="fa-solid fa-crown"></i> </p>
+                        <p id="p2">Buy Plan</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div id="main">
+                    <img src="./pics/vijay.jpg" alt="">
+                </div>
+                <div class="main">
+                    <p style="color: aliceblue;">Viduthalai Part-1</p>
+                    <div class="main1" style="color: aliceblue;">
+                        <p><i class="fa-solid fa-play"></i> </p>
+                        <p id="p1">watch</p>
+                    </div>
+                    <div class="main2" style="color: aliceblue;">
+                        <p><i class="fa-solid fa-crown"></i> </p>
+                        <p id="p2">Buy Plan</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div id="main">
+                    <img src="./pics/radha.jpg" title="Radhamma Kuthuru" alt="" style="color: rgb(0, 0, 0);">
+                </div>
+                <div class="main">
+                    <p style="color: aliceblue;">Radhamma Kuthuru</p>
+                    <div class="main1" style="color: aliceblue;">
+                        <p><i class="fa-solid fa-play"></i> </p>
+                        <p id="p1">watch</p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+
+    <!-- 1st corousel ends -->
+
+    <!-- 2nd carousel -->
+
+    `<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-interval="2000">
+                <div class="salman"><img src="./pics/salman.jpg" alt=""></div>
+            </div>
+            <div class="carousel-item" data-interval="2000">
+                <div class="salman"><img src="./pics/siya.jpg" alt=""></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2nd carousel -->
+
+    <!-- trending near you -->
+
+    <div class="trend">
+        <div id="trend">
+            <div id="edge"><a href="#">
+                    <h4>Trending Near You</h4>
+                </a></div>
+            <div class="edge"><a href="#">
+                    <p>more<i id="ed" class="fa-solid fa-angle-right"></i></p>
+                </a></div>
+        </div>
+        <div id="carouselExampleControls" class="carousel slide" style="overflow: unset;">
+            <div class="carousel-inner" style="overflow: unset;">
+                <div class="carousel-item active" style="overflow: unset;">
+
+
+
+
+                    <div class="cards">
+
+                        <div id="car1" style="background-image: url(./pics/vij.jpg);">
+                            <div class="car1">
+                                <p>
+                                    Viduthalai Part-1</p>
+
+                                <div class="main1" style="color: rgb(92, 102, 110);">
+                                    <p><i class="fa-solid fa-play"></i> </p>
+                                    <p id="p1">watch</p>
+                                </div>
+
+                                <div class="share">
+                                    <p id="share1"><i class="fa-solid fa-share"></i></p>
+                                    <p id="share">Share
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="car1" style="background-image: url(./pics/sirff.jpg);">
+                            <div class="car1">
+                                <p>Sirf Bandaaa Kaafi Hai</p>
+
+                                <div class="main1" style="color: rgb(92, 102, 110);">
+                                    <p><i class="fa-solid fa-play"></i> </p>
+                                    <p id="p1">watch</p>
+                                </div>
+
+                                <div class="share">
+                                    <p id="share1"><i class="fa-solid fa-share"></i></p>
+                                    <p id="share">Share
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="car1" style="background-image: url(./pics/undercover.jpg);">
+                            <div class="car1">
+                                <p>Mrs UnderCover</p>
+
+                                <div class="main1" style="color: rgb(92, 102, 110);">
+                                    <p><i class="fa-solid fa-play"></i> </p>
+                                    <p id="p1">watch</p>
+                                </div>
+
+                                <div class="share">
+                                    <p id="share1"><i class="fa-solid fa-share"></i></p>
+                                    <p id="share">Share
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="car1" style="background-image: url(./pics/gadar.jpg);">
+                            <div class="car1">
+                                <p>Gadar: Ek Prem Katha (4K)</p>
+
+                                <div class="main1" style="color: rgb(92, 102, 110);">
+                                    <p><i class="fa-solid fa-play"></i> </p>
+                                    <p id="p1">watch</p>
+                                </div>
+
+                                <div class="share">
+                                    <p id="share1"><i class="fa-solid fa-share"></i></p>
+                                    <p id="share">Share
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="car1" style="background-image: url(./pics/vish.jpg);">
+                            <div class="car1">
+                                <p></p>
+
+                                <div class="main1" style="color: rgb(92, 102, 110);">
+                                    <p><i class="fa-solid fa-play"></i> </p>
+                                    <p id="p1">watch</p>
+                                </div>
+
+                                <div class="share">
+                                    <p id="share1"><i class="fa-solid fa-share"></i></p>
+                                    <p id="share">Share
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+                <div class="carousel-item">
+
+
+                    <div class="cards">
+
+                        <div id="car1" style="background-image: url(./pics/siyaa.jpg);">
+                            <div class="car1">
+                                <p>Siya</p>
+
+                                <div class="main1" style="color: rgb(92, 102, 110);">
+                                    <p><i class="fa-solid fa-play"></i> </p>
+                                    <p id="p1">watch</p>
+                                </div>
+
+                                <div class="share">
+                                    <p id="share1"><i class="fa-solid fa-share"></i></p>
+                                    <p id="share">Share
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="car1" style="background-image: url(./pics/loc.jpg);">
+                            <div class="car1">
+                                <p>India Lockdown</p>
+
+                                <div class="main1" style="color: rgb(92, 102, 110);">
+                                    <p><i class="fa-solid fa-play"></i> </p>
+                                    <p id="p1">watch</p>
+                                </div>
+
+                                <div class="share">
+                                    <p id="share1"><i class="fa-solid fa-share"></i></p>
+                                    <p id="share">Share
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="car1" style="background-image: url(./pics/writer.jpg);">
+                            <div class="car1">
+                                <p>Writer Padmabhushan</p>
+
+                                <div class="main1" style="color: rgb(92, 102, 110);">
+                                    <p><i class="fa-solid fa-play"></i> </p>
+                                    <p id="p1">watch</p>
+                                </div>
+
+                                <div class="share">
+                                    <p id="share1"><i class="fa-solid fa-share"></i></p>
+                                    <p id="share">Share
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="car1" style="background-image: url(./pics/gune.jpg);">
+                            <div class="car1">
+                                <p>Gunehgaar</p>
+
+                                <div class="main1" style="color: rgb(92, 102, 110);">
+                                    <p><i class="fa-solid fa-play"></i> </p>
+                                    <p id="p1">watch</p>
+                                </div>
+
+                                <div class="share">
+                                    <p id="share1"><i class="fa-solid fa-share"></i></p>
+                                    <p id="share">Share
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="car1" style="background-image: url(./pics/vimanam.jpg);">
+                            <div class="car1">
+                                <p>Prema Vimanam</p>
+
+                                <div class="main1" style="color: rgb(92, 102, 110);">
+                                    <p><i class="fa-solid fa-play"></i> </p>
+                                    <p id="p1">watch</p>
+                                </div>
+
+                                <div class="share">
+                                    <p id="share1"><i class="fa-solid fa-share"></i></p>
+                                    <p id="share">Share
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev"
+                style="width: 3%;">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next"
+                style="width: 3%;">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
+
+    <!-- trending near you -->
+
+    <div class="trend">
+
+        <div id="trend">
+            <div id="edge"><a href="#">
+                    <h4>Top 5 Web Series in India</h4>
+                </a></div>
+            <div class="edge"><a href="#">
+                    <p>more<i id="ed" class="fa-solid fa-angle-right"></i></p>
+                </a></div>
+        </div>
+
+        <div class="cards">
+
+            <div id="car1" style="background-image: url(./pics/taj1);">
+                <div class="car1">
+                    <p>Taj</p>
+
+                    <div class="main1" style="color: rgb(92, 102, 110);">
+                        <p><i class="fa-solid fa-play"></i> </p>
+                        <p id="p1">watch</p>
+                    </div>
+
+                    <div class="share">
+                        <p id="share1"><i class="fa-solid fa-share"></i></p>
+                        <p id="share">Share
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="car1" style="background-image: url(./pics/priya1);">
+                <div class="car1">
+                    <p>Sarvam Shakthi Mayam</p>
+
+                    <div class="main1" style="color: rgb(92, 102, 110);">
+                        <p><i class="fa-solid fa-play"></i> </p>
+                        <p id="p1">watch</p>
+                    </div>
+
+                    <div class="share">
+                        <p id="share1"><i class="fa-solid fa-share"></i></p>
+                        <p id="share">Share
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="car1" style="background-image: url(./pics/hebba1);">
+                <div class="car1">
+                    <p>Vyavastha</p>
+
+                    <div class="main1" style="color: rgb(92, 102, 110);">
+                        <p><i class="fa-solid fa-play"></i> </p>
+                        <p id="p1">watch</p>
+                    </div>
+
+                    <div class="share">
+                        <p id="share1"><i class="fa-solid fa-share"></i></p>
+                        <p id="share">Share
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="car1" style="background-image: url(./pics/prakash);">
+                <div class="car1">
+                    <p>Mukhbir - The Story Of a Spy</p>
+
+                    <div class="main1" style="color: rgb(92, 102, 110);">
+                        <p><i class="fa-solid fa-play"></i> </p>
+                        <p id="p1">watch</p>
+                    </div>
+
+                    <div class="share">
+                        <p id="share1"><i class="fa-solid fa-share"></i></p>
+                        <p id="share">Share
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="car1" style="background-image: url(./pics/sun.jpg);">
+                <div class="car1">
+                    <p>Sunflower</p>
+
+                    <div class="main1" style="color: rgb(92, 102, 110);">
+                        <p><i class="fa-solid fa-play"></i> </p>
+                        <p id="p1">watch</p>
+                    </div>
+
+                    <div class="share">
+                        <p id="share1"><i class="fa-solid fa-share"></i></p>
+                        <p id="share">Share
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+    <!-- top10 -->
+    <div class="trend">
+
+        <div id="trend">
+            <div id="edge"><a href="#">
+                    <h4>Latest Telugu Episodes</h4>
+                </a></div>
+            <div class="edge"><a href="#">
+                    <p>more<i id="ed" class="fa-solid fa-angle-right"></i></p>
+                </a></div>
+        </div>
+
+
+
+
+
+        <div class="cards">
+
+            <div class="smallcard">
+                <div id="serialpic" style="  background-image: url(./pics/ser.jpg);"></div>
+                <div id="serialname">Kalyanam Kamaneeyam
+                    <p>26 jun</p>
+                </div>
+                <div id="smallsub">
+                    <p>Kalyanam Kamaneeyam</p>
+
+                    <div class="smallmain">
+                        <p><i class="fa-solid fa-play"></i> </p>
+                        <p id="sp1">watch</p>
+                    </div>
+
+                    <div class="share">
+                        <p id="share1" style="margin-right: 5px;"><i class="fa-solid fa-share"></i></p>
+                        <p id="share">Share</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="smallcard">
+                <div id="serialpic" style="  background-image: url(./pics/ammai);"></div>
+                <div id="serialname">Ammayi Garu
+                    <p>26 jun</p>
+                </div>
+                <div id="smallsub">
+                    <p>Ammayi Garu</p>
+
+                    <div class="smallmain">
+                        <p><i class="fa-solid fa-play"></i> </p>
+                        <p id="sp1">watch</p>
+                    </div>
+
+                    <div class="share">
+                        <p id="share1" style="margin-right: 5px;"><i class="fa-solid fa-share"></i></p>
+                        <p id="share">Share</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="smallcard">
+                <div id="serialpic" style="  background-image: url(./pics/muk);"></div>
+                <div id="serialname">MukkuPudaka
+                    <p>26 jun</p>
+                </div>
+                <div id="smallsub">
+                    <p>MukkuPudaka</p>
+
+                    <div class="smallmain">
+                        <p><i class="fa-solid fa-play"></i> </p>
+                        <p id="sp1">watch</p>
+                    </div>
+
+                    <div class="share">
+                        <p id="share1" style="margin-right: 5px;"><i class="fa-solid fa-share"></i></p>
+                        <p id="share">Share</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="smallcard">
+                <div id="serialpic" style="  background-image: url(./pics/pad);"></div>
+                <div id="serialname">Padamati Sandhyaragam
+                    <p>26 jun</p>
+                </div>
+                <div id="smallsub">
+                    <p>Padamati Sandhyaragam</p>
+
+                    <div class="smallmain">
+                        <p><i class="fa-solid fa-play"></i> </p>
+                        <p id="sp1">watch</p>
+                    </div>
+
+                    <div class="share">
+                        <p id="share1" style="margin-right: 5px;"><i class="fa-solid fa-share"></i></p>
+                        <p id="share">Share</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="smallcard">
+                <div id="serialpic" style="  background-image: url(./pics/tr);"></div>
+                <div id="serialname">Trinayani
+                    <p>26 jun</p>
+                </div>
+                <div id="smallsub">
+                    <p>Trinayani</p>
+
+                    <div class="smallmain">
+                        <p><i class="fa-solid fa-play"></i> </p>
+                        <p id="sp1">watch</p>
+                    </div>
+
+                    <div class="share">
+                        <p id="share1" style="margin-right: 5px;"><i class="fa-solid fa-share"></i></p>
+                        <p id="share">Share</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+
+
+
+
+    </div>
+
+
+    <!-- top10 -->
+
+    <div class="trend">
+
+        <div id="trend">
+            <div id="edge"><a href="#">
+                    <h4>Latest Hindi Episodes Free</h4>
+                </a></div>
+            <div class="edge"><a href="#">
+                    <p>more<i id="ed" class="fa-solid fa-angle-right"></i></p>
+                </a></div>
+        </div>
+
+
+
+
+
+        <div class="cards">
+
+            <div class="smallcard">
+                <div id="serialpic" style="  background-image: url(./pics/bhagya\ lakshmi);"></div>
+                <div id="serialname">Bhagya Lakshmi
+                    <p>26 jun</p>
+                </div>
+                <div id="smallsub">
+                    <p>Bhagya Lakshmi</p>
+
+                    <div class="smallmain">
+                        <p><i class="fa-solid fa-play"></i> </p>
+                        <p id="sp1">watch</p>
+                    </div>
+
+                    <div class="share">
+                        <p id="share1" style="margin-right: 5px;"><i class="fa-solid fa-share"></i></p>
+                        <p id="share">Share</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="smallcard">
+                <div id="serialpic" style="  background-image: url(./pics/meet);"></div>
+                <div id="serialname">Meet
+                    <p>26 jun</p>
+                </div>
+                <div id="smallsub">
+                    <p>Meet</p>
+
+                    <div class="smallmain">
+                        <p><i class="fa-solid fa-play"></i> </p>
+                        <p id="sp1">watch</p>
+                    </div>
+
+                    <div class="share">
+                        <p id="share1" style="margin-right: 5px;"><i class="fa-solid fa-share"></i></p>
+                        <p id="share">Share</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="smallcard">
+                <div id="serialpic" style="  background-image: url(./pics/maitree);"></div>
+                <div id="serialname">Maitree
+                    <p>26 jun</p>
+                </div>
+                <div id="smallsub">
+                    <p>Maitree</p>
+
+                    <div class="smallmain">
+                        <p><i class="fa-solid fa-play"></i> </p>
+                        <p id="sp1">watch</p>
+                    </div>
+
+                    <div class="share">
+                        <p id="share1" style="margin-right: 5px;"><i class="fa-solid fa-share"></i></p>
+                        <p id="share">Share</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="smallcard">
+                <div id="serialpic" style="  background-image: url(./pics/doosari\ maa);"></div>
+                <div id="serialname">Doosari Maa
+                    <p>26 jun</p>
+                </div>
+                <div id="smallsub">
+                    <p>Doosari Maa</p>
+
+                    <div class="smallmain">
+                        <p><i class="fa-solid fa-play"></i> </p>
+                        <p id="sp1">watch</p>
+                    </div>
+
+                    <div class="share">
+                        <p id="share1" style="margin-right: 5px;"><i class="fa-solid fa-share"></i></p>
+                        <p id="share">Share</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="smallcard">
+                <div id="serialpic" style="  background-image: url(./pics/kundali\ bhagya);"></div>
+                <div id="serialname">Kundali Bhagya
+                    <p>26 jun</p>
+                </div>
+                <div id="smallsub">
+                    <p>Kundali Bhagya</p>
+
+                    <div class="smallmain">
+                        <p><i class="fa-solid fa-play"></i> </p>
+                        <p id="sp1">watch</p>
+                    </div>
+
+                    <div class="share">
+                        <p id="share1" style="margin-right: 5px;"><i class="fa-solid fa-share"></i></p>
+                        <p id="share">Share</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+
+
+
+
+    </div>
+
+
+    <!-- serials -->
+
+    <div class="trend">
+
+        <div id="trend">
+            <div id="edge"><a href="#">
+                    <h4>Must Watch Stories</h4>
+                </a></div>
+            <div class="edge"><a href="#">
+                    <p>more<i id="ed" class="fa-solid fa-angle-right"></i></p>
+                </a></div>
+        </div>
+
+        <div class="cards">
+
+            <div id="car1" style="background-image: url(./pics/jersey.jpg);">
+                <div class="car1">
+                    <p>jersey</p>
+
+                    <div class="main1" style="color: rgb(92, 102, 110);">
+                        <p><i class="fa-solid fa-play"></i> </p>
+                        <p id="p1">watch</p>
+                    </div>
+
+                    <div class="share">
+                        <p id="share1"><i class="fa-solid fa-share"></i></p>
+                        <p id="share">Share
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="car1" style="background-image: url(./pics/kar.jpg);">
+                <div class="car1">
+                    <p>Karthikeya 2</p>
+
+                    <div class="main1" style="color: rgb(92, 102, 110);">
+                        <p><i class="fa-solid fa-play"></i> </p>
+                        <p id="p1">watch</p>
+                    </div>
+
+                    <div class="share">
+                        <p id="share1"><i class="fa-solid fa-share"></i></p>
+                        <p id="share">Share
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="car1" style="background-image: url(./pics/nt.jpg);">
+                <div class="car1">
+                    <p>Aravinda Sametha Veera Raghava</p>
+
+                    <div class="main1" style="color: rgb(92, 102, 110);">
+                        <p><i class="fa-solid fa-play"></i> </p>
+                        <p id="p1">watch</p>
+                    </div>
+
+                    <div class="share">
+                        <p id="share1"><i class="fa-solid fa-share"></i></p>
+                        <p id="share">Share
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="car1" style="background-image: url(./pics/row.jpg);">
+                <div class="car1">
+                    <p>Rowdy Boys</p>
+
+                    <div class="main1" style="color: rgb(92,102, 110);">
+                        <p><i class="fa-solid fa-play"></i> </p>
+                        <p id="p1">watch</p>
+                    </div>
+
+                    <div class="share">
+                        <p id="share1"><i class="fa-solid fa-share"></i></p>
+                        <p id="share">Share
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="car1" style="background-image: url(./pics/rrr.jpg);">
+                <div class="car1">
+                    <p>RRR</p>
+
+                    <div class="main1" style="color: rgb(92, 102, 110);">
+                        <p><i class="fa-solid fa-play"></i> </p>
+                        <p id="p1">watch</p>
+                    </div>
+
+                    <div class="share">
+                        <p id="share1"><i class="fa-solid fa-share"></i></p>
+                        <p id="share">Share
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- ending -->
+
+    <div class="trend">
+
+        <div id="trend">
+            <div id="edge"><a href="#">
+                    <h4>Explore In Your Language</h4>
+                </a></div>
+            <div class="edge"><a href="#">
+                    <p>more<i id="ed" class="fa-solid fa-angle-right"></i></p>
+                </a></div>
+        </div>
+        <div class="explore">
+            <div class="exp" style="background-image: url(./pics/tel.jpg);">
+
+                <div id="tel">
+                    <p class="ttt">Telugu</p>
+                    <section>
+                        <p><i class="fa-solid fa-play"></i>watch</p>
+                        <p id="sec"><i class="fa-solid fa-share"></i>share</p>
+                    </section>
+                </div>
+
+            </div>
+
+            <div class="exp" style="background-image: url(./pics/hin.jpg);">
+
+                <div id="tel">
+                    <p class="ttt">Hindi</p>
+                    <section>
+                        <p><i class="fa-solid fa-play"></i>watch</p>
+                        <p id="sec"><i class="fa-solid fa-share"></i>share</p>
+                    </section>
+                </div>
+
+            </div>
+
+            <div class="exp" style="background-image: url(./pics/eng.jpg);">
+
+                <div id="tel">
+                    <p class="ttt">English</p>
+                    <section>
+                        <p><i class="fa-solid fa-play"></i>watch</p>
+                        <p id="sec"><i class="fa-solid fa-share"></i>share</p>
+                    </section>
+                </div>
+
+            </div>
+
+            <div class="exp" style="background-image: url(./pics/kan.jpg);">
+
+                <div id="tel">
+                    <p class="ttt">Kannada</p>
+                    <section>
+                        <p><i class="fa-solid fa-play"></i>watch</p>
+                        <p id="sec"><i class="fa-solid fa-share"></i>share</p>
+                    </section>
+                </div>
+
+            </div>
+
+            <div class="exp" style="background-image: url(./pics/tam.jpg);">
+
+                <div id="tel">
+                    <p class="ttt">Tamil</p>
+                    <section>
+                        <p><i class="fa-solid fa-play"></i>watch</p>
+                        <p id="sec"><i class="fa-solid fa-share"></i>share</p>
+                    </section>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ending -->
+
+
+    <!-- footer -->
+
+    <footer>
+
+
+        <div class="foot">
+
+            <div class="and">
+                <div class="andleft">
+
+                    <div class="andlefts" style="margin-left: 0px;">Download Apps</div>
+                    <div class="andlefts"><img src="./pics/google-play-icon.svg" alt=""></div>
+                    <div class="andlefts"><img src="./pics/apple.icon.svg" alt=""></div>
+
+
+                </div>
+                <div class="andright">
+                    <div id="con">Connect with us</div>
+                    <div id="icon">
+                        <div class="icons"><i class="fa-brands fa-instagram"></i></div>
+                        <div class="icons">  <i class="fa-brands fa-facebook"></i></div>
+                        <div class="icons"><i class="fa-brands fa-twitter"></i></div>
+                        <div class="icons"><i class="fa-brands fa-youtube"></i></div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="about">
+
+                <div class="abt" style="margin-left: 0px;">About us</div>
+                <div class="abt">Help Center</div>
+                <div class="abt">Privacy Policy</div>
+                <div class="abt">Terms of Use</div>
+
+
+            </div>
+
+            <div class="tvs">
+
+                <div class="tvss" style="margin-left: 0px;">Popular Tv Shows
+                
+                <div class="pop" style="margin-top: 15px;">Kumkum Bhagya</div>
+                <div class="pop">Kundali Bhagya</div>
+                <div class="pop">Bhagya Lakshmi</div>
+                <div class="pop">Meet</div>
+                <div class="pop">Annapoorna</div>
+                <div class="pop">Indira</div>
+
+                </div>
+
+
+                <div class="tvss">Premium Movies    
+
+                    <div class="pop" style="margin-top: 15px;">Bandaa</div>
+                    <div class="pop">RRR</div>
+                    <div class="pop">Uuncha</div>
+                    <div class="pop">Uri: The Surgical Strike</div>
+                    <div class="pop">Dial 100</div>
+                    <div class="pop">Helmet</div>
+
+
+
+
+
+
+                </div>
+
+                <div class="tvss">Popular Live Tv Channels
+
+                    <div class="pop" style="margin-top: 15px;">Aaj Tak</div>
+                    <div class="pop">Zee News</div>
+                    <div class="pop">Zee TV HD</div>
+                    <div class="pop">&TV HD</div>
+                    <div class="pop">Zee Marathi HD</div>
+
+                </div>
+
+                <div class="tvss">Popular Web Series
+
+                    <div class="pop" style="margin-top: 15px;">Sunflower</div>
+                    <div class="pop">Tripling</div>
+                    <div class="pop">Pitchers</div>
+                    <div class="pop">Naxalbar</div>
+                    <div class="pop">Taj</div>
+                    <div class="pop">Anantham</div>
+                    <div class="pop">Gaalivana</div>
+                </div>
+
+                <div class="tvss">Bollywood Top Celebrities
+                    <div class="pop" style="margin-top: 15px;">Sunny Leone</div>
+                    <div class="pop">Disha Patani</div>
+                    <div class="pop">Deepika Padukone</div>
+                    <div class="pop">Salman Khan</div>
+                    <div class="pop">Manoj Bajpayee</div>
+                    <div class="pop">Nora Fatehi</div>
+                </div>
+
+                <div class="tvss">Games & News
+                    <div class="pop" style="margin-top: 15px;">Play</div>
+                    <div class="pop">Stories</div>
+                    <div class="pop">Articles</div>
+                </div>
+
+            </div>
+
+
+            <div class="fin">Best Viewed on Google Chrome 80+, Microsoft Edge 81+, Mozilla Firefox 75+, Safari 5.1.5+
+               <p> Copyright @ 2023 Zee Entertainment Enterprises Ltd. All rights reserved.</p>
+            </div>
+            <!-- <p class="fin"></p> -->
+
+        </div>
+
+    </footer>
+
+    <!-- footer -->
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
